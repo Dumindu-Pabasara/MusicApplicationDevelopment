@@ -13,10 +13,11 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        getStartBtn = findViewById(R.id.getStartBtn);
+        getStartBtn = findViewById(R.id.loginButton);
 
         getStartBtn.setOnClickListener(view ->
                 Toast.makeText(Login.this, "Starting app...", Toast.LENGTH_SHORT).show()
+
         );
     }
 }
