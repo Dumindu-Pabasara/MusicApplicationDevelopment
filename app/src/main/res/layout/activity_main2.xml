@@ -1,35 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".MainActivity2">
+    android:background="@drawable/login_bg"
+    android:padding="24dp">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:fitsSystemWindows="true"
-        >
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width = "match_parent"
-            android:layout_height = "?attr/actionBarSize" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign Up"
+    android:textSize="26sp"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="32dp" />
 
-  </com.google.android.material.appbar.AppBarLayout>
+<EditText
+    android:id="@+id/et_name"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="Name"
+    android:background="@drawable/rounded_edittext"
+    android:padding="12dp"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#CCCCCC" />
 
-  <include layout="@layout/content_main2"/>
+<EditText
+    android:id="@+id/et_email"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="Email"
+    android:background="@drawable/rounded_edittext"
+    android:padding="12dp"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#CCCCCC"
+    android:layout_marginTop="12dp" />
 
-  <com.google.android.material.floatingactionbutton.FloatingActionButton
-  android:id="@+id/fab"
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content"
-  android:layout_gravity="bottom|end"
-  android:layout_marginEnd="@dimen/fab_margin"
-  android:layout_marginBottom="16dp"
-  app:srcCompat="@android:drawable/ic_dialog_email" />
+<EditText
+    android:id="@+id/et_password"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:background="@drawable/rounded_edittext"
+    android:padding="12dp"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#CCCCCC"
+    android:layout_marginTop="12dp" />
 
-  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+<EditText
+    android:id="@+id/et_confirm_password"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="Confirm Password"
+    android:inputType="textPassword"
+    android:background="@drawable/rounded_edittext"
+    android:padding="12dp"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#CCCCCC"
+    android:layout_marginTop="12dp" />
+
+<CheckBox
+    android:id="@+id/cb_agree"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="I Agree with privacy and policy"
+    android:textColor="#FFFFFF"
+    android:layout_marginTop="12dp" />
+
+<Button
+    android:id="@+id/btn_signup"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="Sign Up"
+    android:layout_marginTop="16dp"
+    android:textStyle="bold"
+    android:background="@drawable/rounded_button"
+    android:textColor="#FFFFFF" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="Already have an Account ?"
+    android:textColor="#FFFFFF" />
+
+<TextView
+    android:id="@+id/tv_signin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign in"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF"
+    android:layout_marginBottom="24dp" />
+</LinearLayout>
+    </ScrollView>
