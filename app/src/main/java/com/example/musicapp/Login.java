@@ -48,15 +48,21 @@ public class Login extends AppCompatActivity {
                 Toast.makeText(Login.this, "Starting app...", Toast.LENGTH_SHORT).show()
         );
 
-        // Sign Up text click එක handle කරන්න
-        signUpText = findViewById(R.id.signUpText);
-        signUpText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // MainActivity2 එකට යන්න
-                Intent intent = new Intent(Login.this, MainActivity2.class);
-                startActivity(intent);
-            }
+        getStartBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(Login.this, Home_activity.class);
+            startActivity(intent);
+
+
+            // Sign Up text click එක handle කරන්න
+            signUpText = findViewById(R.id.signUpText);
+            signUpText.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // MainActivity2 එකට යන්න
+                    Intent intent = new Intent(Login.this, MainActivity2.class);
+                    startActivity(intent);
+                }
+            });
         });
     }
 }
