@@ -8,8 +8,6 @@
     tools:context=".Home_activity">
 
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,7 +15,9 @@
         android:padding="16dp"
         android:background="@drawable/home_upperbg">
 
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,7 +62,6 @@
         android:hint="Search music"
         android:textColor="@color/white"
         android:background="@drawable/rounded_button"
-        android:drawableLeft="@drawable/ic_search"
         android:padding="8dp"/>
 
     <!-- "Made For You" Section -->
@@ -85,10 +84,13 @@
             android:orientation="horizontal">
 
             <!-- Albums (Dummy Images for Now) -->
-            <ImageView android:layout_width="100dp" android:layout_height="100dp"
-                android:src="@drawable/ic_album" android:layout_marginEnd="8dp"/>
-            <ImageView android:layout_width="100dp" android:layout_height="100dp"
-                android:src="@drawable/ic_album" android:layout_marginEnd="8dp"/>
+            <ImageView android:layout_width="100dp" android:layout_height="110dp"
+                android:src="@drawable/up" android:layout_marginEnd="5dp"/>
+            <ImageView android:layout_width="200dp" android:layout_height="110dp"
+                android:src="@drawable/seedevi" android:layout_marginEnd="5dp"/>
+            <ImageView android:layout_width="100dp" android:layout_height="110dp"
+                android:src="@drawable/longly" android:layout_marginEnd="5dp"/>
+
             <!-- Repeat as needed -->
         </LinearLayout>
     </HorizontalScrollView>
@@ -96,8 +98,8 @@
     <!-- Ad Placeholder -->
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:src="@drawable/ic_ad"
+        android:layout_height="150dp"
+        android:src="@drawable/add"
         android:scaleType="center"/>
 
     <!-- "Today Hits" Section -->
@@ -120,12 +122,12 @@
             android:orientation="horizontal">
 
             <!-- Hit Songs (Dummy Images for Now) -->
-            <ImageView android:layout_width="100dp" android:layout_height="100dp"
-                android:src="@drawable/ic_album" android:layout_marginEnd="8dp"/>
-            <ImageView android:layout_width="100dp" android:layout_height="100dp"
-                android:src="@drawable/ic_album" android:layout_marginEnd="8dp"/>
-            <ImageView android:layout_width="100dp" android:layout_height="100dp"
-                android:src="@drawable/ic_album" android:layout_marginEnd="8dp"/>
+            <ImageView android:layout_width="150dp" android:layout_height="100dp"
+                android:src="@drawable/thumbnail1" android:layout_marginEnd="0dp"/>
+            <ImageView android:layout_width="150dp" android:layout_height="100dp"
+                android:src="@drawable/thumbnail2" android:layout_marginEnd="0dp"/>
+            <ImageView android:layout_width="150dp" android:layout_height="100dp"
+                android:src="@drawable/thumbnail3" android:layout_marginEnd="0dp"/>
             <!-- Repeat as needed -->
         </LinearLayout>
     </HorizontalScrollView>
@@ -133,23 +135,26 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:paddingTop="8dp">
+            android:paddingTop="0dp">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <!-- Hit Songs (Dummy Images for Now) -->
-                <ImageView android:layout_width="100dp" android:layout_height="100dp"
-                    android:src="@drawable/ic_album" android:layout_marginEnd="8dp"/>
-                <ImageView android:layout_width="100dp" android:layout_height="100dp"
-                    android:src="@drawable/ic_album" android:layout_marginEnd="8dp"/>
-                <ImageView android:layout_width="100dp" android:layout_height="100dp"
-                    android:src="@drawable/ic_album" android:layout_marginEnd="8dp"/>
+                <ImageView android:layout_width="150dp" android:layout_height="100dp"
+                    android:src="@drawable/thumbnail3" android:layout_marginEnd="0dp"/>
+                <ImageView android:layout_width="150dp" android:layout_height="100dp"
+                    android:src="@drawable/thumbnail5" android:layout_marginEnd="0dp"/>
+                <ImageView android:layout_width="150dp" android:layout_height="100dp"
+                    android:src="@drawable/thumbnail7" android:layout_marginEnd="8dp"/>
                 <!-- Repeat as needed -->
             </LinearLayout>
         </HorizontalScrollView>
+        </ScrollView>
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
